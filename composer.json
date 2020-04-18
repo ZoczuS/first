@@ -11,7 +11,7 @@
     "post-update-cmd": [
       "hostname",
       "mkdir -p _libraries",
-      "cp -r vendor/twbs/bootstrap/dist _libraries/bootstrap/",
+      "cp -r vendor/twbs/bootstrap/dist _libraries/bootstrap/"
     ]
   }
 }
